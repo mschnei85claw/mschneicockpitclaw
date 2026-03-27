@@ -21,18 +21,63 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1, h2 {
-            color: #FF8C00;
+            color: #FF8C00; /* Orange */
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
             margin-top: 20px;
         }
         .objectif {
-            background-color: #FFF3E0;
-            border-left: 5px solid #FFA500;
+            background-color: #FFF3E0; /* Orange clair */
+            border-left: 5px solid #FFA500; /* Orange */
             padding: 15px;
             margin-bottom: 20px;
             font-size: 1.1em;
             font-weight: bold;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .details-button {
+            background-color: #FFA500; /* Orange */
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .details-button:hover {
+            background-color: #FF8C00; /* Orange foncé */
+        }
+        .details-content {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: none; /* Hidden by default */
+        }
+        .progress-bar-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            width: 10%; /* Initial progress, will be updated */
+            height: 20px;
+            background-color: #FFA500; /* Orange */
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-size: 0.8em;
+            border-radius: 5px;
+            transition: width 0.5s ease-in-out;
         }
         .proposition {
             background-color: #f9f9f9;
@@ -43,7 +88,15 @@
         }
         .proposition h3 {
             margin-top: 0;
-            color: #FF8C00;
+            color: #FF8C00; /* Orange */
+        }
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
         }
     </style>
 </head>
@@ -56,34 +109,79 @@
             <p>Transformer <strong>200 CHF en 1000 CHF</strong> d'ici fin <strong>Juillet 2026</strong>.</p>
         </div>
 
-        <h2>Nos 6 Propositions :</h2>
+        <div class="section-header">
+            <h2>Idée 1 : Data Boutique</h2>
+            <button class="details-button" onclick="toggleDetails('dataBoutiqueDetails')">Détails</button>
+        </div>
+        <div id="dataBoutiqueDetails" class="details-content">
+            <h3>Recherche de Produits Numériques (Phase 1)</h3>
+            <p>Statut: Recherche en cours sur Gumroad et Etsy pour identifier 3 produits. J'optimise l'utilisation des tokens pour rester sous 3$/jour.</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 10%;">10%</div>
+            </div>
+            <div id="dataBoutiquePropositions">
+                <!-- Les propositions seront injectées ici par le script ou par de futures mises à jour -->
+                <p>Propositions : Aucune proposition finale pour le moment.</p>
+            </div>
+        </div>
+
+        <h2>Autres Propositions d'Investissement :</h2>
         <div id="propositions">
             <div class="proposition">
-                <h3>Proposition 1: Affiliation via Pinterest et Canva (Votre idée !)</h3>
-                <p>Statut: En cours d'analyse et de rédaction.</p>
+                <h3>Proposition 1: Affiliation & Marketing de Contenu (Pinterest & Canva)</h3>
+                <p>Rôle: Exécution et gestion complète des campagnes. Statut: En attente de votre validation pour démarrer.</p>
             </div>
             <div class="proposition">
-                <h3>Proposition 2: (En attente)</h3>
-                <p>Statut: En attente de rédaction.</p>
+                <h3>Proposition 2: Dropshipping de Niche (produits à forte marge)</h3>
+                <p>Rôle: Exécution et gestion complète de la boutique. Statut: En attente de votre validation pour démarrer.</p>
             </div>
             <div class="proposition">
-                <h3>Proposition 3: (En attente)</h3>
-                <p>Statut: En attente de rédaction.</p>
+                <h3>Proposition 3: Micro-Freelance Spécialisé (Création de Contenu Social Media)</h3>
+                <p>Rôle: Exécution et gestion complète des missions. Statut: En attente de votre validation pour démarrer.</p>
             </div>
             <div class="proposition">
-                <h3>Proposition 4: (En attente)</h3>
-                <p>Statut: En attente de rédaction.</p>
+                <h3>Proposition 4: Micro-investissement Cryptomonnaies (Altcoins à fort potentiel)</h3>
+                <p>Rôle: Recherche, sélection et gestion des investissements. Statut: En attente de votre validation pour démarrer.</p>
             </div>
             <div class="proposition">
-                <h3>Proposition 5: (En attente)</h3>
-                <p>Statut: En attente de rédaction.</p>
+                <h3>Proposition 5: Vente de Produits Numériques (E-books, Templates, Presets)</h3>
+                <p>Rôle: Création, production et gestion de la vente. Statut: En attente de votre validation pour démarrer.</p>
             </div>
             <div class="proposition">
-                <h3>Proposition 6: (En attente)</h3>
-                <p>Statut: En attente de rédaction.</p>
+                <h3>Proposition 6: Micro-Service Local (Nettoyage/Petits Travaux spécialisés)</h3>
+                <p>Rôle: Organisation et gestion du service. Statut: En attente de votre validation pour démarrer.</p>
             </div>
         </div>
         <p>Ce cockpit sera mis à jour au fur et à mesure que les propositions seront rédigées et validées.</p>
     </div>
+
+    <div class="footer">
+        <p>Dernière mise à jour : <span id="lastUpdated">2026-03-27 à 09:12 UTC</span></p>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
+        // Fonction pour mettre à jour la date et l'heure
+        function updateLastUpdated() {
+            const now = new Date();
+            const year = now.getUTCFullYear();
+            const month = (now.getUTCMonth() + 1).toString().padStart(2, '0');
+            const day = now.getUTCDate().toString().padStart(2, '0');
+            const hours = now.getUTCHours().toString().padStart(2, '0');
+            const minutes = now.getUTCMinutes().toString().padStart(2, '0');
+            const seconds = now.getUTCSeconds().toString().padStart(2, '0');
+            document.getElementById('lastUpdated').textContent = `${year}-${month}-${day} à ${hours}:${minutes}:${seconds} UTC`;
+        }
+        // Appeler au chargement et ensuite le cron s'en chargera
+        updateLastUpdated();
+    </script>
 </body>
 </html>
