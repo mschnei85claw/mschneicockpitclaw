@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cockpit de Pilotage Financier - Michel</title>
+    <title>Cockpit de Pilotage Financier - Vision Empire 2027</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #FF8C00; /* Orange */
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
@@ -79,14 +79,14 @@
             border-radius: 5px;
             transition: width 0.5s ease-in-out;
         }
-        .proposition {
+        .projet, .idee-labo, .proposition {
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             padding: 15px;
             margin-bottom: 10px;
             border-radius: 5px;
         }
-        .proposition h3 {
+        .projet h3, .idee-labo h3, .proposition h4 {
             margin-top: 0;
             color: #FF8C00; /* Orange */
         }
@@ -102,74 +102,100 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cockpit de Pilotage Financier - Michel</h1>
+        <h1>Cockpit de Pilotage Financier - Vision Empire 2027</h1>
 
         <div class="objectif">
-            <h2>Notre Objectif :</h2>
-            <p>Transformer <strong>200 CHF en 1000 CHF</strong> d'ici fin <strong>Juillet 2026</strong>.</p>
+            <h2>Objectif Final :</h2>
+            <p>Bâtir une infrastructure de mini-entreprises automatisées générant un **bénéfice net de 500 $/mois** d'ici votre **Tour du Monde en Juillet 2027**.</p>
         </div>
 
         <div class="section-header">
-            <h2>Idée 1 : Data Boutique</h2>
-            <button class="details-button" onclick="toggleDetails('dataBoutiqueDetails')">Détails</button>
+            <h2>🟢 ZONE PROJETS ACTIFS</h2>
         </div>
-        <div id="dataBoutiqueDetails" class="details-content">
-            <h3>Recherche de Produits Numériques (Phase 1)</h3>
-            <p>Statut: 3 produits identifiés sur Gumroad et Etsy. J'optimise l'utilisation des tokens pour rester sous 3$/jour.</p>
-            <div class="progress-bar-container">
-                <div class="progress-bar" style="width: 100%;">100%</div>
+        <div id="projetsActifs">
+            <div class="projet">
+                <h3>PROJET N°1 : Dégustation Vins Valais</h3>
+                <p>Action : Alimentation massive de la base de données (Valais entier).</p>
+                <p>Tâche : Scan des horaires/contacts et injection automatique sur le site.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 10%;">10%</div>
+                </div>
+                <button class="details-button" onclick="toggleDetails('detailsVinValais')">Détails</button>
+                <div id="detailsVinValais" class="details-content">
+                    <p>Détails techniques : Le projet vise à centraliser toutes les informations sur les dégustations de vins du Valais. Mon rôle inclut la recherche des vignerons, la collecte d'informations sur leurs offres de dégustation via web scraping et API si disponibles, l'intégration des données dans une base de données structurée, et l'affichage dynamique sur un site web dédié. La monétisation sera basée sur l'affiliation et les partenariats.</p>
+                </div>
             </div>
-            <div id="dataBoutiquePropositions">
-                <h3>Propositions de Produits Numériques :</h3>
-                <div class="proposition">
-                    <h4>1. Ultimate Notion Life OS Template Bundle</h4>
-                    <p><strong>Public Cible :</strong> Solopreneurs, freelancers, étudiants, et professionnels cherchant à optimiser la productivité et la gestion des tâches avec Notion.</p>
-                    <p><strong>Profit Estimé (par vente) :</strong> 15 CHF - 40 CHF</p>
+            <div class="projet">
+                <h3>PROJET N°2 : Data Boutique</h3>
+                <p>Action : Structuration de données numériques (CSV/PDF) pour Gumroad/Etsy (Hors vin).</p>
+                <p>Statut: 3 produits identifiés sur Gumroad et Etsy. J'optimise l'utilisation des tokens pour rester sous 3$/jour.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 100%;">100%</div>
                 </div>
-                <div class="proposition">
-                    <h4>2. AI Prompt Engineering Master Guide pour Créateurs de Contenu</h4>
-                    <p><strong>Public Cible :</strong> Créateurs de contenu, marketers, rédacteurs, et petites entreprises souhaitant utiliser l'IA efficacement pour générer du contenu de haute qualité.</p>
-                    <p><strong>Profit Estimé (par vente) :</strong> 12 CHF - 35 CHF</p>
+                <button class="details-button" onclick="toggleDetails('detailsDataBoutique')">Détails</button>
+                <div id="detailsDataBoutique" class="details-content">
+                    <p>Détails techniques : Ce projet consiste à identifier des niches de produits numériques à forte demande sur des plateformes comme Gumroad et Etsy. Mon rôle inclut le scan de marché, la proposition de 3 produits concrets (PDFs, templates, guides), la création de ces produits (ou la supervision de leur création si besoin de compétences spécifiques), la mise en place des fiches produits optimisées, et la gestion des ventes. L'objectif est de générer des revenus passifs élevés avec un faible coût initial.</p>
+                    <h3>Propositions de Produits Numériques :</h3>
+                    <div class="proposition">
+                        <h4>1. Ultimate Notion Life OS Template Bundle</h4>
+                        <p><strong>Public Cible :</strong> Solopreneurs, freelancers, étudiants, et professionnels cherchant à optimiser la productivité et la gestion des tâches avec Notion.</p>
+                        <p><strong>Profit Estimé (par vente) :</strong> 15 CHF - 40 CHF</p>
+                    </div>
+                    <div class="proposition">
+                        <h4>2. AI Prompt Engineering Master Guide pour Créateurs de Contenu</h4>
+                        <p><strong>Public Cible :</strong> Créateurs de contenu, marketers, rédacteurs, et petites entreprises souhaitant utiliser l'IA efficacement pour générer du contenu de haute qualité.</p>
+                        <p><strong>Profit Estimé (par vente) :</strong> 12 CHF - 35 CHF</p>
+                    </div>
+                    <div class="proposition">
+                        <h4>3. Kit de Planification & Modèles de Contenu pour Médias Sociaux</h4>
+                        <p><strong>Public Cible :</strong> Petites entreprises, gestionnaires de médias sociaux, et influenceurs ayant besoin de modèles préconçus et d'un planificateur structuré pour leur contenu social.</p>
+                        <p><strong>Profit Estimé (par vente) :</strong> 10 CHF - 30 CHF</p>
+                    </div>
                 </div>
-                <div class="proposition">
-                    <h4>3. Kit de Planification & Modèles de Contenu pour Médias Sociaux</h4>
-                    <p><strong>Public Cible :</strong> Petites entreprises, gestionnaires de médias sociaux, et influenceurs ayant besoin de modèles préconçus et d'un planificateur structuré pour leur contenu social.</p>
-                    <p><strong>Profit Estimé (par vente) :</strong> 10 CHF - 30 CHF</p>
             </div>
         </div>
 
-        <h2>Autres Propositions d'Investissement :</h2>
-        <div id="propositions">
-            <div class="proposition">
-                <h3>Proposition 1: Affiliation & Marketing de Contenu (Pinterest & Canva)</h3>
-                <p>Rôle: Exécution et gestion complète des campagnes. Statut: En attente de votre validation pour démarrer.</p>
+        <div class="section-header">
+            <h2>🧪 ZONE LABORATOIRE D'IDÉES</h2>
+        </div>
+        <div id="laboratoireIdees">
+            <div class="idee-labo">
+                <h3>Slot 1 : Recherche en cours...</h3>
+                <p>Score Potentiel : N/A</p>
+                <button class="details-button" onclick="toggleDetails('detailsLabo1')">Détails</button>
+                <div id="detailsLabo1" class="details-content">
+                    <p>Mission : Scan global pour identifier des opportunités de revenus passifs à forte marge. Critères : faible coût de démarrage, scalabilité, potentiel de 15$-49$ par vente/service.</p>
+                </div>
             </div>
-            <div class="proposition">
-                <h3>Proposition 2: Dropshipping de Niche (produits à forte marge)</h3>
-                <p>Rôle: Exécution et gestion complète de la boutique. Statut: En attente de votre validation pour démarrer.</p>
+            <div class="idee-labo">
+                <h3>Slot 2 : Recherche en cours...</h3>
+                <p>Score Potentiel : N/A</p>
+                <button class="details-button" onclick="toggleDetails('detailsLabo2')">Détails</button>
+                <div id="detailsLabo2" class="details-content">
+                    <p>Mission : Scan global pour identifier des opportunités de revenus passifs à forte marge. Critères : faible coût de démarrage, scalabilité, potentiel de 15$-49$ par vente/service.</p>
+                </div>
             </div>
-            <div class="proposition">
-                <h3>Proposition 3: Micro-Freelance Spécialisé (Création de Contenu Social Media)</h3>
-                <p>Rôle: Exécution et gestion complète des missions. Statut: En attente de votre validation pour démarrer.</p>
+            <div class="idee-labo">
+                <h3>Slot 3 : Recherche en cours...</h3>
+                <p>Score Potentiel : N/A</p>
+                <button class="details-button" onclick="toggleDetails('detailsLabo3')">Détails</button>
+                <div id="detailsLabo3" class="details-content">
+                    <p>Mission : Scan global pour identifier des opportunités de revenus passifs à forte marge. Critères : faible coût de démarrage, scalabilité, potentiel de 15$-49$ par vente/service.</p>
+                </div>
             </div>
-            <div class="proposition">
-                <h3>Proposition 4: Micro-investissement Cryptomonnaies (Altcoins à fort potentiel)</h3>
-                <p>Rôle: Recherche, sélection et gestion des investissements. Statut: En attente de votre validation pour démarrer.</p>
-            </div>
-            <div class="proposition">
-                <h3>Proposition 5: Vente de Produits Numériques (E-books, Templates, Presets)</h3>
-                <p>Rôle: Création, production et gestion de la vente. Statut: En attente de votre validation pour démarrer.</p>
-            </div>
-            <div class="proposition">
-                <h3>Proposition 6: Micro-Service Local (Nettoyage/Petits Travaux spécialisés)</h3>
-                <p>Rôle: Organisation et gestion du service. Statut: En attente de votre validation pour démarrer.</p>
+            <div class="idee-labo">
+                <h3>Slot 4 : Recherche en cours...</h3>
+                <p>Score Potentiel : N/A</p>
+                <button class="details-button" onclick="toggleDetails('detailsLabo4')">Détails</button>
+                <div id="detailsLabo4" class="details-content">
+                    <p>Mission : Scan global pour identifier des opportunités de revenus passifs à forte marge. Critères : faible coût de démarrage, scalabilité, potentiel de 15$-49$ par vente/service.</p>
+                </div>
             </div>
         </div>
-        <p>Ce cockpit sera mis à jour au fur et à mesure que les propositions seront rédigées et validées.</p>
     </div>
 
     <div class="footer">
-        <p>Dernière mise à jour : <span id="lastUpdated">2026-03-28 à 04:40 UTC</span></p>
+        <p>Dernière mise à jour par Pétole : <span id="lastUpdated">2026-03-28 à 04:40 UTC</span></p>
     </div>
 
     <script>
@@ -182,7 +208,6 @@
             }
         }
 
-        // Fonction pour mettre à jour la date et l'heure
         function updateLastUpdated() {
             const now = new Date();
             const year = now.getUTCFullYear();
@@ -193,7 +218,6 @@
             const seconds = now.getUTCSeconds().toString().padStart(2, '0');
             document.getElementById('lastUpdated').textContent = `${year}-${month}-${day} à ${hours}:${minutes}:${seconds} UTC`;
         }
-        // Appeler au chargement et ensuite le cron s'en chargera
         updateLastUpdated();
     </script>
 </body>
